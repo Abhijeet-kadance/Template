@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSR</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .navbar {
+        background-color: #91c1dc;
+      }
+      .nav-link {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1c1e20;
+      }
+
+      .nav-box {
+        background-color: #e5f6ff;
+        font-size: 26px;
+        color: #1c1e20;
+        display: grid;
+        justify-items: center;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: #333; */
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #1c1e20;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        /* background-color: #111; */
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        height: auto; /* Set the fixed height of the footer here */
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #5c5c5c;
+      }
+      .copyright-section {
+        color: #e5f6ff;
+      }
+      .test {
+        margin-top: -30px;
+        color: #e5f6ff;
+      }
+      .card-block {
+        text-align: center;
+        height: 130px;
+        padding-top: 30px;
+        background-color: #52708c;
+        color: white;
+        transition: background-color .6s ease, transform .6s;
+      }
+      .card-block:hover{
+        transform: scale(1.1);
+        background-color: #7eb3e4;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="Logo.png" style="width: 300px; height: 90px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li> -->
+            </ul>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-box">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+
+    <!--
+        Cards Section
+    -->
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row hidden-md-up mb-2">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <img src="SourceCode.png" style="height: 40px;width:40px"/>
+                <h4 class="card-title">Source Code</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Upload Solution</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Document Hub</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Project Details</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Demonstration</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">View Solutions</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Sessions</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Profile Activity</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Socha nahio abhi Tak</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Section Ends -->
+    <footer class="footer">
+      <div class="container text-center">
+        <span class="copyright-section"
+          >Created and managed by gist-tdil team</span
+        >
+        <p class="test">© CDAC GIST Pune</p>
+      </div>
+    </footer>
+  </body>
+</html>
